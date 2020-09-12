@@ -1,6 +1,5 @@
 package com.jojoldu.book.springboot.domain.posts;
 
-import com.jojoldu.book.springboot.domain.user.Role;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -67,11 +66,6 @@ public class PostsRepositoryTest {
         assertThat(posts.getModifiedDate()).isAfter(now);
 
 
-    }
-
-    @Test
-    public void enumTest() {
-        System.out.println("key : " + Role.GUEST.getKey() + " title : " + Role.GUEST.getTitle());
     }
 
 }
